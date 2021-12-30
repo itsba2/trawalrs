@@ -1,0 +1,57 @@
+.loginContainer {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: auto;
+}
+
+.loginForm {
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginBtn {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: royalblue;
+  align-self: center;
+  width: 50%;
+  cursor: pointer;
+}
+
+.danger {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+}
+
+.loginClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: royalblue;
+}
+
+.walrusLogo {
+  width: 100px;
+  position: absolute;
+  top: -70px;
+}
