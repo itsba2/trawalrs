@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trawalrs</title>
+</head>
+
+<body style="margin: 0; font-family:Arial, Helvetica, sans-serif; font-size: '16px';">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    // If there is no color mode set previously
+    // set system theme initially
+    if (!localStorage.getItem('color-mode')) {
+      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)')
+      if (isSystemDark.matches) {
+        localStorage.setItem('color-mode', 'dark')
+      } else {
+        localStorage.setItem('color-mode', 'light')
+      }
+
+    }
+  </script>
+</body>
+
+</html>

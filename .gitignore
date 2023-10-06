@@ -1,0 +1,7 @@
+**/node_modules/
+*.log
+.env
+.env.local
+
+# Change this depending on your `UPLOAD_DIR` value in `.env` file
+public/
