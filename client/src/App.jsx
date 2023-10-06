@@ -1,14 +1,22 @@
 import axios from "axios";
 import { Map } from "./components/Map";
-import { Box } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
+import { Fragment } from "react";
 
 axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
 function App() {
   return (
-    <Box component="div" sx={{ height: "100vh", width: "100%" }} tabIndex={-1}>
-      <Map />
-    </Box>
+    <Fragment>
+      <CssBaseline enableColorScheme />
+      <Box
+        component="div"
+        sx={{ height: "100vh", width: "100%" }}
+        tabIndex={-1}
+      >
+        <Map />
+      </Box>
+    </Fragment>
   );
 }
 
